@@ -14,6 +14,7 @@ public class numOneActivity extends AppCompatActivity {
     ImageView[] imageViews= new ImageView[9];
     Random random=new Random();
 
+    int num=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,8 +43,11 @@ public class numOneActivity extends AppCompatActivity {
             imageViews[i].setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    int btn= (int) v.getTag();
 
-                    
+                    if (num==btn){
+                        
+                    }
 
 
                 }
