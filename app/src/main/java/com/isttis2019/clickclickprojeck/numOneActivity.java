@@ -35,6 +35,7 @@ public class numOneActivity extends AppCompatActivity {
         }
         for (int i=0; i<9; i++){
             imageViews[i].setImageResource(R.drawable.num01+rndNum[i]);
+            imageViews[i].setTag(rndNum[i]);
         }
 
         for (int i=0; i<9; i++){
@@ -42,6 +43,7 @@ public class numOneActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
 
+                    
 
 
                 }
