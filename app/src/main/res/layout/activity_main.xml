@@ -25,7 +25,7 @@
         android:background="@android:color/transparent"/>
 
     <ImageView
-        android:onClick="clickst"
+        android:onClick="clickimg"
         android:id="@+id/start"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
@@ -34,111 +34,6 @@
         android:src="@drawable/start"
         android:clickable="true"/>
 
-    <LinearLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:weightSum="3"
-        android:orientation="horizontal">
-
-        <ImageView
-
-            android:id="@+id/vi01"
-            android:layout_width="110sp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:onClick="clickBtn"
-             />
-
-        <ImageView
-            android:id="@+id/vi02"
-            android:layout_width="110sp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:onClick="clickBtn"
-             />
-        <ImageView
-            android:id="@+id/vi03"
-            android:layout_width="110sp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:onClick="clickBtn"
-           />
-    </LinearLayout>
-
-    <LinearLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:weightSum="3"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/vi04"
-            android:layout_width="110sp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:onClick="clickBtn"
-            />
-
-        <ImageView
-            android:id="@+id/vi05"
-            android:layout_width="110sp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:onClick="clickBtn"
-             />
-        <ImageView
-            android:id="@+id/vi06"
-            android:layout_width="110sp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:onClick="clickBtn"
-            />
-    </LinearLayout>
-
-    <LinearLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:weightSum="3"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/vi07"
-            android:layout_width="110sp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:onClick="clickBtn"
-             />
-
-        <ImageView
-            android:id="@+id/vi08"
-            android:layout_width="110sp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:onClick="clickBtn"
-            />
-        <ImageView
-            android:id="@+id/vi09"
-            android:layout_width="110sp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:onClick="clickBtn"
-            />
-    </LinearLayout>
 
 
 

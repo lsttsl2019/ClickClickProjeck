@@ -1,5 +1,6 @@
 package com.isttis2019.clickclickprojeck;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -40,101 +41,18 @@ public class MainActivity extends AppCompatActivity {
         st=findViewById(R.id.start);
 
 
-        for(int i=0; i<arr.length ; i++){
-            arr[i]=rnd.nextInt(9);
-            for(int k=0; k<i; k++){
-               if(arr[i]==arr[k]){
-                   i--;
-                   break;
-               }
-               }
-        }
-
-        for(int i=0; i<iv.length;i++){
-            iv[i]=findViewById(R.id.vi01+i);
-        }
-        //id와 달았다.
 
 
 
 
     }
 
-    public void Rnd(){
 
-        for(int i=0; i<arr.length ; i++){
-            arr[i]=rnd.nextInt(9);
-            for(int k=0; k<i; k++){
-                if(arr[i]==arr[k]){
-                    i--;
-                    break;
-                }
-            }
-        }
+    public void clickimg(View view) {
+        Intent intent=new Intent(this, numOneActivity.class);
+        startActivity(intent);
 
-        for(int i=0; i<iv.length;i++){
-            iv[i]=findViewById(R.id.vi01+i);
-            iv[i].setVisibility(View.VISIBLE);
-        }
-    }
-
-    public void clickst(View v){
-
-
-
-        for(int i=0; i<iv.length ;i++){
-            iv[i].setImageResource(R.drawable.num01+arr[i]);
-            iv[i].setTag(arr[i]);
-        }
-
-        tv.setText("숫자를 순서대로 누르세요");
-
-        st.setImageResource(R.drawable.starting);
-
-
-    }
-
-    public void clickBtn(View v){
-        int btn=((int)v.getTag());
-        if(btn==nums){
-            v.setVisibility(View.INVISIBLE);
-            nums++;
-        }
-        if(btn==8){
-
-            if(re==0){
-                bg.setBackgroundResource(R.drawable.bg2);
-                nums=0;
-
-                Rnd();
-                for(int i=0; i<iv.length ;i++){
-                    iv[i].setImageResource(R.drawable.num11+arr[i]);
-                    iv[i].setTag(arr[i]);
-                }
-
-
-                re++;
-
-            }else if(re==1){
-                bg.setBackgroundResource(R.drawable.bg3);
-                nums=0;
-                Rnd();
-                for(int i=0; i<iv.length ;i++){
-                    iv[i].setImageResource(R.drawable.num21+arr[i]);
-                    iv[i].setTag(arr[i]);
-                }
-
-                re++;
-            }else if(re==2){
-                tv.setText("Good End");
-                st.setVisibility(View.INVISIBLE);
-                bg.setBackgroundResource(R.drawable.bg4);
-            }
-
-
-
-
-        }
+        finish();
 
 
     }
