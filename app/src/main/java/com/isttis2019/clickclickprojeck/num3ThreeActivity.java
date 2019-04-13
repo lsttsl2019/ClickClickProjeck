@@ -1,6 +1,9 @@
 package com.isttis2019.clickclickprojeck;
 
+import android.app.DatePickerDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,8 +12,7 @@ import android.widget.Toast;
 
 import java.util.Random;
 
-public class numOneActivity extends AppCompatActivity {
-
+public class num3ThreeActivity extends AppCompatActivity {
 
     int[] rndNum=new int[9];
     ImageView[] imageViews= new ImageView[9];
@@ -19,9 +21,9 @@ public class numOneActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_num_one);
-        Intent intent=new Intent(this.getIntent());
+        setContentView(R.layout.activity_num3_three);
 
+        Intent intent=this.getIntent();
 
         for (int i=0; i<9; i++){
             imageViews[i]=findViewById(R.id.img_01+i);
@@ -36,11 +38,9 @@ public class numOneActivity extends AppCompatActivity {
             }
         }
         for (int i=0; i<9; i++){
-            imageViews[i].setImageResource(R.drawable.num01+rndNum[i]);
+            imageViews[i].setImageResource(R.drawable.num21+rndNum[i]);
             imageViews[i].setTag(rndNum[i]);
         }
-
-
 
 
     }
@@ -56,32 +56,17 @@ public class numOneActivity extends AppCompatActivity {
         }else {
             Toast.makeText(this, "순서대로 눌러주세요.", Toast.LENGTH_SHORT).show();
         }
+
         if (num==8){
-            Intent intent=new Intent(this, numTwoActivity.class);
+            Intent intent=new Intent(this, finalActivity.class);
             startActivity(intent);
             finish();
         }
 
+
+
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

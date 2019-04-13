@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".numOneActivity"></activity>
+        <activity android:name=".finalActivity"></activity>
+        <activity android:name=".num3ThreeActivity" />
+        <activity android:name=".numTwoActivity" />
+        <activity android:name=".numOneActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
